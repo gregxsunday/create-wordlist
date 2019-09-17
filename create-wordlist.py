@@ -30,8 +30,6 @@ if __name__ == '__main__':
                 except IndexError:
                     pass
                 res.add(path.join(path_base, word))
-                # res.append(path.join())
 
-    print(res)
     with open(outfile_path, 'w') as outfile:
         print('\n'.join(res), file=outfile)
